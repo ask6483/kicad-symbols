@@ -90,6 +90,12 @@ K adc 6ch 16bit serial
 F https://www.analog.com/media/en/technical-documentation/data-sheets/AD7794_7795.pdf
 $ENDCMP
 #
+$CMP AD7799
+D 24-Bit, 3-Channel Sigma-Delta ADC, TSSOP-16
+K adc 3ch 24bit serial
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD7794_7795.pdf
+$ENDCMP
+#
 $CMP AD7819
 D Analog to Digital 8 bits converter, PDIP/SOIC/TSSOP-16
 K CAD
