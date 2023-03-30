@@ -2895,7 +2895,7 @@
     (property "Value" "ESP32-WROOM-32D" (id 1) (at 1.27 34.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "RF_Module:ESP32-WROOM-32" (id 2) (at 0 -38.1 0)
+    (property "Footprint" "RF_Module:ESP32-WROOM-32D" (id 2) (at 16.51 -34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" (id 3) (at -7.62 1.27 0)
@@ -2907,7 +2907,7 @@
     (property "ki_description" "RF Module, ESP32-D0WD SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD" (id 5) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "ki_fp_filters" "ESP32?WROOM?32*" (id 6) (at 0 0 0)
+    (property "ki_fp_filters" "ESP32?WROOM?32D*" (id 6) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
   )
@@ -4805,7 +4805,7 @@
     (property "Datasheet" "https://www.hoperf.com/data/upload/portal/20181127/5bfcbb56f1fd7.pdf" (id 3) (at 0 -7.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "ki_keywords" "Radio, ISM, Transceiver, Module, AES" (id 4) (at 0 0 0)
+    (property "ki_keywords" "Radio ISM Transceiver Module AES" (id 4) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "ki_description" "ISM Radio Transceiver Module, SPI interface" (id 5) (at 0 0 0)
@@ -4849,7 +4849,7 @@
         (name "NSS" (effects (font (size 1.27 1.27))))
         (number "15" (effects (font (size 1.27 1.27))))
       )
-      (pin no_connect line (at -2.54 -12.7 90) (length 2.54) hide
+      (pin no_connect line (at -2.54 -10.16 90) (length 2.54) hide
         (name "NC" (effects (font (size 1.27 1.27))))
         (number "16" (effects (font (size 1.27 1.27))))
       )
@@ -5595,7 +5595,7 @@
         (name "GND" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))
       )
-      (pin no_connect line (at 5.08 22.86 270) (length 2.54) hide
+      (pin no_connect line (at 5.08 20.32 270) (length 2.54) hide
         (name "NC" (effects (font (size 1.27 1.27))))
         (number "10" (effects (font (size 1.27 1.27))))
       )
@@ -5671,7 +5671,7 @@
         (name "GND" (effects (font (size 1.27 1.27))))
         (number "27" (effects (font (size 1.27 1.27))))
       )
-      (pin no_connect line (at 7.62 22.86 270) (length 2.54) hide
+      (pin no_connect line (at 7.62 20.32 270) (length 2.54) hide
         (name "NC" (effects (font (size 1.27 1.27))))
         (number "28" (effects (font (size 1.27 1.27))))
       )
