@@ -163,7 +163,8 @@
 			)
 		)
 	)
-	(symbol "Fuse Clip"
+	(symbol "Fuse Clip Single"
+		(pin_numbers hide)
 		(pin_names
 			(offset 1.016)
 		)
@@ -178,7 +179,7 @@
 				)
 			)
 		)
-		(property "Value" "Fuse Clip"
+		(property "Value" "Fuse Clip Single"
 			(at 0 -3.556 0)
 			(effects
 				(font
@@ -231,10 +232,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "Fuse Clip_1_1"
+		(symbol "Fuse Clip Single_1_1"
 			(rectangle
-				(start -2.921 2.413)
-				(end 2.921 -2.413)
+				(start -1.27 1.778)
+				(end 1.27 -1.778)
 				(stroke
 					(width 0)
 					(type default)
@@ -243,104 +244,22 @@
 					(type background)
 				)
 			)
-		)
-	)
-	(symbol "Fuse_Clip_Keystone_3549"
-		(pin_names
-			(offset 1.016)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "FC"
-			(at 0 3.556 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(pin passive line
+				(at -2.54 0 0)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
-			)
-		)
-		(property "Value" "Fuse Mini Blade Clip"
-			(at 0 -3.556 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuseholder_Clip_Reference_Designator_Littelfuse_100_Keystone_3549"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=303"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse Clip Single"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "3549"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "https://www.mouser.pl/ProductDetail/Keystone-Electronics/3549?qs=Mn60vILZNNb%252Bu9OM%252BurIpw%3D%3D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "fuse clip"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "*Fuse*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "Fuse_Clip_Keystone_3549_1_1"
-			(rectangle
-				(start -2.921 2.413)
-				(end 2.921 -2.413)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)
