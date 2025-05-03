@@ -23138,7 +23138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irf7309ipbf.pdf"
+		(property "Datasheet" "https://www.infineon.com/dgdl/irf7309pbf.pdf?fileId=5546d462533600a4015355f224631b14"
 			(at 5.08 -3.81 0)
 			(effects
 				(font
@@ -23512,7 +23512,7 @@
 			(pin passive line
 				(at 2.54 -5.08 90)
 				(length 2.54)
-				(name "1"
+				(name "S"
 					(effects
 						(font
 							(size 1.27 1.27)
