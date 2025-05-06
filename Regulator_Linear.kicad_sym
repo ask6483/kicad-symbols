@@ -145996,7 +145996,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "800 mA Fixed Low Drop Positive Voltage Regulator (ldo). Max input 15V. Fixed Output 3.3V. SOT-223"
+		(property "Description" "800 mA Fixed Low Drop Positive Voltage Regulator (ldo). Max input 15V. Fixed Output 3.3V. TO-220-3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -146061,7 +146061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "800 mA Fixed Low Drop Positive Voltage Regulator (ldo). Max input 15V. Fixed Output 5.0V. SOT-223"
+		(property "Description" "800 mA Fixed Low Drop Positive Voltage Regulator (ldo). Max input 15V. Fixed Output 5.0V. TO-220-3"
 			(at 0 0 0)
 			(effects
 				(font
