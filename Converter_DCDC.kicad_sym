@@ -15515,289 +15515,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "TMR-0510"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "U"
-			(at -8.89 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TMR-0510"
-			(at 10.16 8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "500mA Regulated 2W DC/DC converter with 1.5kV isolation, 4.5V-9V input, 3.3V fixed Output Voltage, SIP-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "TMR-0510_0_1"
-			(rectangle
-				(start -10.16 7.62)
-				(end 10.16 -7.62)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 7.62) (xy 0 6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 5.08) (xy 0 3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 2.54) (xy 0 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 0) (xy 0 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -5.08) (xy 0 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "TMR-0510_1_1"
-			(pin power_in line
-				(at -12.7 5.08 0)
-				(length 2.54)
-				(name "+VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -12.7 0 0)
-				(length 2.54)
-				(name "ON/~{OFF}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -12.7 -5.08 0)
-				(length 2.54)
-				(name "-VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 10.16 0 180)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 12.7 5.08 180)
-				(length 2.54)
-				(name "+VOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 12.7 -5.08 180)
-				(length 2.54)
-				(name "-VOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
 	(symbol "TMR2-2410WI"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -61276,27 +60993,26 @@
 			)
 		)
 	)
-	(symbol "TMR-0511"
-		(extends "TMR-0510")
+	(symbol "TMR-0510"
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TMR-0511"
-			(at 10.16 8.89 0)
+		(property "Value" "TMR-0510"
+			(at 1.524 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61305,7 +61021,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61313,7 +61029,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400mA Regulated 2W DC/DC converter with 1.5kV isolation, 4.5V-9V input, 5V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 4.5-9V input, 3.3V fixed output voltage, 500mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61322,7 +61038,71 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR-0511"
+		(extends "TEC3-2410UI")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR-0511"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2W DC/DC industrial converter regulated, 4.5-9V input, 5V fixed output voltage, 400mA output, 1.6kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61342,9 +61122,9 @@
 		)
 	)
 	(symbol "TMR-0512"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61352,16 +61132,15 @@
 			)
 		)
 		(property "Value" "TMR-0512"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61370,7 +61149,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61378,7 +61157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "165mA Regulated 2W DC/DC converter with 1.5kV isolation, 4.5V-9V input, 12V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 4.5-9V input, 12V fixed output voltage, 167mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61387,7 +61166,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61407,9 +61186,9 @@
 		)
 	)
 	(symbol "TMR-1210"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61417,16 +61196,15 @@
 			)
 		)
 		(property "Value" "TMR-1210"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61435,7 +61213,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61443,7 +61221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "500mA Regulated 2W DC/DC converter with 1.5kV isolation, 9V-18V input, 3.3V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 9-18V input, 3.3V fixed output voltage, 500mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61452,7 +61230,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61472,9 +61250,9 @@
 		)
 	)
 	(symbol "TMR-1211"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61482,16 +61260,15 @@
 			)
 		)
 		(property "Value" "TMR-1211"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61500,7 +61277,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61508,7 +61285,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400mA Regulated 2W DC/DC converter with 1.5kV isolation, 9V-18V input, 5V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 9-18V input, 5V fixed output voltage, 400mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61517,7 +61294,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61537,9 +61314,9 @@
 		)
 	)
 	(symbol "TMR-1212"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61547,16 +61324,15 @@
 			)
 		)
 		(property "Value" "TMR-1212"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61565,7 +61341,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61573,7 +61349,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "165mA Regulated 2W DC/DC converter with 1.5kV isolation, 9V-18V input, 12V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 9-18V input, 12V fixed output voltage, 167mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61582,7 +61358,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61602,9 +61378,9 @@
 		)
 	)
 	(symbol "TMR-2410"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61612,16 +61388,15 @@
 			)
 		)
 		(property "Value" "TMR-2410"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61630,7 +61405,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61638,7 +61413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "500mA Regulated 2W DC/DC converter with 1.5kV isolation, 18V-36V input, 3.3V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 18-36V input, 3.3V fixed output voltage, 500mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61647,7 +61422,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61667,9 +61442,9 @@
 		)
 	)
 	(symbol "TMR-2411"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61677,16 +61452,15 @@
 			)
 		)
 		(property "Value" "TMR-2411"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61695,7 +61469,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61703,7 +61477,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400mA Regulated 2W DC/DC converter with 1.5kV isolation, 18V-36V input, 5V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 18-36V input, 5V fixed output voltage, 400mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61712,7 +61486,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61732,9 +61506,9 @@
 		)
 	)
 	(symbol "TMR-2412"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61742,16 +61516,15 @@
 			)
 		)
 		(property "Value" "TMR-2412"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61760,7 +61533,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61768,7 +61541,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "165mA Regulated 2W DC/DC converter with 1.5kV isolation, 18V-36V input, 12V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 18-36V input, 12V fixed output voltage, 167mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61777,7 +61550,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61797,9 +61570,9 @@
 		)
 	)
 	(symbol "TMR-4810"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61807,16 +61580,15 @@
 			)
 		)
 		(property "Value" "TMR-4810"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61825,7 +61597,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61833,7 +61605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "500mA Regulated 2W DC/DC converter with 1.5kV isolation, 36V-75V input, 3.3V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 36-75V input, 3.3V fixed output voltage, 500mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61842,7 +61614,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61862,9 +61634,9 @@
 		)
 	)
 	(symbol "TMR-4811"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61872,16 +61644,15 @@
 			)
 		)
 		(property "Value" "TMR-4811"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61890,7 +61661,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61898,7 +61669,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400mA Regulated 2W DC/DC converter with 1.5kV isolation, 36V-75V input, 5V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 36-75V input, 5V fixed output voltage, 400mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61907,7 +61678,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61927,9 +61698,9 @@
 		)
 	)
 	(symbol "TMR-4812"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61937,16 +61708,15 @@
 			)
 		)
 		(property "Value" "TMR-4812"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
-			(at 0 -8.89 0)
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61955,7 +61725,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61963,7 +61733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "165mA Regulated 2W DC/DC converter with 1.5kV isolation, 36V-75V input, 12V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 36-75V input, 12V fixed output voltage, 167mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61972,7 +61742,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
