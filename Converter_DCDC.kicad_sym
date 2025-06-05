@@ -15515,38 +15515,28 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "TMR-0510"
+	(symbol "TMR10-2410WIR"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -7.112 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TMR-0510"
-			(at 10.16 8.89 0)
+		(property "Value" "TMR10-2410WIR"
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15554,7 +15544,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "500mA Regulated 2W DC/DC converter with 1.5kV isolation, 4.5V-9V input, 3.3V fixed Output Voltage, SIP-8"
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 9-36V input, 3.3V fixed output voltage, 2.5A output, 3.0kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15563,7 +15562,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15572,7 +15571,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15581,28 +15580,16 @@
 				(hide yes)
 			)
 		)
-		(symbol "TMR-0510_0_1"
+		(symbol "TMR10-2410WIR_0_1"
 			(rectangle
-				(start -10.16 7.62)
-				(end 10.16 -7.62)
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
 				)
 				(fill
 					(type background)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 7.62) (xy 0 6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
 				)
 			)
 			(polyline
@@ -15653,24 +15640,12 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -5.08) (xy 0 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 		)
-		(symbol "TMR-0510_1_1"
+		(symbol "TMR10-2410WIR_1_0"
 			(pin power_in line
-				(at -12.7 5.08 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
-				(name "+VIN"
+				(name "+Vin"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15686,9 +15661,9 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -10.16 0 0)
 				(length 2.54)
-				(name "ON/~{OFF}"
+				(name "Remote"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15704,9 +15679,9 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 -5.08 0)
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "-VIN"
+				(name "-Vin"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15722,17 +15697,17 @@
 				)
 			)
 			(pin no_connect line
-				(at 10.16 2.54 180)
+				(at -2.54 -5.08 90)
 				(length 2.54)
 				(hide yes)
-				(name "NC"
+				(name "Case"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15741,7 +15716,26 @@
 				)
 			)
 			(pin no_connect line
-				(at 10.16 0 180)
+				(at -1.27 -5.08 90)
+				(length 2.54)
+				(hide yes)
+				(name "Case"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 1.27 -5.08 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -15760,9 +15754,9 @@
 				)
 			)
 			(pin power_out line
-				(at 12.7 5.08 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
-				(name "+VOUT"
+				(name "+Vout"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15778,9 +15772,9 @@
 				)
 			)
 			(pin power_out line
-				(at 12.7 -5.08 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
-				(name "-VOUT"
+				(name "-Vout"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15788,6 +15782,282 @@
 					)
 				)
 				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "TMR10-2421WIR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-2421WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 9-36V input, ±5V fixed output voltage, 1A each output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TMR10-2421WIR_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 5.08) (xy 0 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TMR10-2421WIR_1_0"
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "+Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "Remote"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "-Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(hide yes)
+				(name "Case"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 1.27 -5.08 90)
+				(length 2.54)
+				(hide yes)
+				(name "Case"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "+Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "Com"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -48615,6 +48885,262 @@
 			)
 		)
 	)
+	(symbol "TBA1-0310"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-0310"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 2.97-3.63V input, 3.3V fixed output voltage, 260mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TBA1-0311"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-0311"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 2.97-3.63V input, 5V fixed output voltage, 200mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TBA1-0510"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-0510"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 4.5-5.5V input, 3.3V fixed output voltage, 260mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TBA1-0511"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-0511"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 4.5-5.5V input, 5V fixed output voltage, 200mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "TBA1-0511E"
 		(extends "TMA-0505S")
 		(property "Reference" "U"
@@ -48670,6 +49196,70 @@
 			)
 		)
 		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxxE*Single*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TBA1-0512"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-0512"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 4.5-5.5V input, 12V fixed output voltage, 80mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -48743,6 +49333,70 @@
 			)
 		)
 	)
+	(symbol "TBA1-0513"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-0513"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 4.5-5.5V input, 15V fixed output voltage, 65mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "TBA1-0513E"
 		(extends "TMA-0505S")
 		(property "Reference" "U"
@@ -48798,6 +49452,70 @@
 			)
 		)
 		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxxE*Single*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TBA1-0519"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-0519"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 4.5-5.5V input, 9V fixed output voltage, 110mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -48999,6 +49717,70 @@
 			)
 		)
 	)
+	(symbol "TBA1-1211"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-1211"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 10.8-13.2V input, 5V fixed output voltage, 200mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "TBA1-1211E"
 		(extends "TMA-0505S")
 		(property "Reference" "U"
@@ -49054,6 +49836,70 @@
 			)
 		)
 		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxxE*Single*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TBA1-1212"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-1212"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 10.8-13.2V input, 12V fixed output voltage, 80mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -49127,6 +49973,70 @@
 			)
 		)
 	)
+	(symbol "TBA1-1213"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-1213"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 10.8-13.2V input, 15V fixed output voltage, 65mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "TBA1-1213E"
 		(extends "TMA-0505S")
 		(property "Reference" "U"
@@ -49182,6 +50092,70 @@
 			)
 		)
 		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxxE*Single*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TBA1-1219"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-1219"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 10.8-13.2V input, 9V fixed output voltage, 110mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -49383,6 +50357,70 @@
 			)
 		)
 	)
+	(symbol "TBA1-2411"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-2411"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 21.6-26.4V input, 5V fixed output voltage, 200mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "TBA1-2411E"
 		(extends "TMA-0505S")
 		(property "Reference" "U"
@@ -49438,6 +50476,70 @@
 			)
 		)
 		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxxE*Single*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TBA1-2412"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-2412"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 21.6-26.4V input, 12V fixed output voltage, 80mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -49511,6 +50613,70 @@
 			)
 		)
 	)
+	(symbol "TBA1-2413"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-2413"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 21.6-26.4V input, 15V fixed output voltage, 65mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "TBA1-2413E"
 		(extends "TMA-0505S")
 		(property "Reference" "U"
@@ -49566,6 +50732,70 @@
 			)
 		)
 		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxxE*Single*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TBA1-2419"
+		(extends "MEE3S0505SC")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TBA1-2419"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TBA1-xxxx_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tba1.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 21.6-26.4V input, 9V fixed output voltage, 110mA output, 1.5kVDC isolation, SIP-4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc not-regulated non-regulated single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TBA1*xxxx*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51597,7 +52827,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -51633,7 +52863,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51661,7 +52891,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -51697,7 +52927,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51725,7 +52955,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -51761,7 +52991,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51789,7 +53019,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -51825,7 +53055,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51853,7 +53083,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -51889,7 +53119,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51917,7 +53147,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -51953,7 +53183,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -51981,7 +53211,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52017,7 +53247,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52045,7 +53275,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52081,7 +53311,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52109,7 +53339,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52145,7 +53375,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52173,7 +53403,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52209,7 +53439,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52237,7 +53467,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52273,7 +53503,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52301,7 +53531,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52337,7 +53567,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52365,7 +53595,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52401,7 +53631,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52429,7 +53659,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52465,7 +53695,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52493,7 +53723,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52529,7 +53759,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52557,7 +53787,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52593,7 +53823,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52621,7 +53851,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52657,7 +53887,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52685,7 +53915,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
 			(at 0 -6.604 0)
 			(effects
 				(font
@@ -52721,7 +53951,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -54978,7 +56208,7 @@
 				)
 			)
 		)
-		(property "Value" "TEN10-11010WIRH"
+		(property "Value" "TEN10-11012WIRH"
 			(at 4.064 6.35 0)
 			(effects
 				(font
@@ -55042,7 +56272,7 @@
 				)
 			)
 		)
-		(property "Value" "TEN10-11010WIRH"
+		(property "Value" "TEN10-11013WIRH"
 			(at 4.064 6.35 0)
 			(effects
 				(font
@@ -55106,7 +56336,7 @@
 				)
 			)
 		)
-		(property "Value" "TEN10-11010WIRH"
+		(property "Value" "TEN10-11015WIRH"
 			(at 4.064 6.35 0)
 			(effects
 				(font
@@ -61276,27 +62506,26 @@
 			)
 		)
 	)
-	(symbol "TMR-0511"
-		(extends "TMR-0510")
+	(symbol "TMR-0510"
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TMR-0511"
-			(at 10.16 8.89 0)
+		(property "Value" "TMR-0510"
+			(at 1.524 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61305,7 +62534,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61313,7 +62542,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400mA Regulated 2W DC/DC converter with 1.5kV isolation, 4.5V-9V input, 5V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 4.5-9V input, 3.3V fixed output voltage, 500mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61322,7 +62551,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61331,7 +62560,71 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR-0511"
+		(extends "TEC3-2410UI")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR-0511"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2W DC/DC industrial converter regulated, 4.5-9V input, 5V fixed output voltage, 400mA output, 1.6kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61342,9 +62635,9 @@
 		)
 	)
 	(symbol "TMR-0512"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61352,16 +62645,15 @@
 			)
 		)
 		(property "Value" "TMR-0512"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61370,7 +62662,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61378,7 +62670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "165mA Regulated 2W DC/DC converter with 1.5kV isolation, 4.5V-9V input, 12V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 4.5-9V input, 12V fixed output voltage, 167mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61387,7 +62679,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61396,7 +62688,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61407,9 +62699,9 @@
 		)
 	)
 	(symbol "TMR-1210"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61417,16 +62709,15 @@
 			)
 		)
 		(property "Value" "TMR-1210"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61435,7 +62726,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61443,7 +62734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "500mA Regulated 2W DC/DC converter with 1.5kV isolation, 9V-18V input, 3.3V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 9-18V input, 3.3V fixed output voltage, 500mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61452,7 +62743,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61461,7 +62752,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61472,9 +62763,9 @@
 		)
 	)
 	(symbol "TMR-1211"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61482,16 +62773,15 @@
 			)
 		)
 		(property "Value" "TMR-1211"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61500,7 +62790,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61508,7 +62798,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400mA Regulated 2W DC/DC converter with 1.5kV isolation, 9V-18V input, 5V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 9-18V input, 5V fixed output voltage, 400mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61517,7 +62807,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61526,7 +62816,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61537,9 +62827,9 @@
 		)
 	)
 	(symbol "TMR-1212"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61547,16 +62837,15 @@
 			)
 		)
 		(property "Value" "TMR-1212"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61565,7 +62854,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61573,7 +62862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "165mA Regulated 2W DC/DC converter with 1.5kV isolation, 9V-18V input, 12V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 9-18V input, 12V fixed output voltage, 167mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61582,7 +62871,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61591,7 +62880,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61602,9 +62891,9 @@
 		)
 	)
 	(symbol "TMR-2410"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61612,16 +62901,15 @@
 			)
 		)
 		(property "Value" "TMR-2410"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61630,7 +62918,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61638,7 +62926,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "500mA Regulated 2W DC/DC converter with 1.5kV isolation, 18V-36V input, 3.3V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 18-36V input, 3.3V fixed output voltage, 500mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61647,7 +62935,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61656,7 +62944,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61667,9 +62955,9 @@
 		)
 	)
 	(symbol "TMR-2411"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61677,16 +62965,15 @@
 			)
 		)
 		(property "Value" "TMR-2411"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61695,7 +62982,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61703,7 +62990,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400mA Regulated 2W DC/DC converter with 1.5kV isolation, 18V-36V input, 5V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 18-36V input, 5V fixed output voltage, 400mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61712,7 +62999,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61721,7 +63008,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61732,9 +63019,9 @@
 		)
 	)
 	(symbol "TMR-2412"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61742,16 +63029,15 @@
 			)
 		)
 		(property "Value" "TMR-2412"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61760,7 +63046,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61768,7 +63054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "165mA Regulated 2W DC/DC converter with 1.5kV isolation, 18V-36V input, 12V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 18-36V input, 12V fixed output voltage, 167mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61777,7 +63063,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61786,7 +63072,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61797,9 +63083,9 @@
 		)
 	)
 	(symbol "TMR-4810"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61807,16 +63093,15 @@
 			)
 		)
 		(property "Value" "TMR-4810"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61825,7 +63110,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61833,7 +63118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "500mA Regulated 2W DC/DC converter with 1.5kV isolation, 36V-75V input, 3.3V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 36-75V input, 3.3V fixed output voltage, 500mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61842,7 +63127,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61851,7 +63136,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61862,9 +63147,9 @@
 		)
 	)
 	(symbol "TMR-4811"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61872,16 +63157,15 @@
 			)
 		)
 		(property "Value" "TMR-4811"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61890,7 +63174,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61898,7 +63182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400mA Regulated 2W DC/DC converter with 1.5kV isolation, 36V-75V input, 5V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 36-75V input, 5V fixed output voltage, 400mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61907,7 +63191,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61916,7 +63200,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61927,9 +63211,9 @@
 		)
 	)
 	(symbol "TMR-4812"
-		(extends "TMR-0510")
+		(extends "TEC3-2410UI")
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -6.858 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61937,16 +63221,15 @@
 			)
 		)
 		(property "Value" "TMR-4812"
-			(at 10.16 8.89 0)
+			(at 2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT"
-			(at 0 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC2-12xxWI_24xxWI_48xxWI_THT"
+			(at 0 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61955,7 +63238,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2.pdf"
-			(at 0 -12.7 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61963,7 +63246,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "165mA Regulated 2W DC/DC converter with 1.5kV isolation, 36V-75V input, 12V fixed Output Voltage, SIP-8"
+		(property "Description" "2W DC/DC industrial converter regulated, 36-75V input, 12V fixed output voltage, 167mA output, 1.6kVDC isolation, SIP-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61972,7 +63255,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -61981,7 +63264,1415 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*xxxx*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC2*12xxWI*24xxWI*48xxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-2411WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-2411WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 9-36V input, 5V fixed output voltage, 2A output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-2412WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-2412WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 9-36V input, 12V fixed output voltage, 840mA output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-2413WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-2413WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 9-36V input, 15V fixed output voltage, 670mA output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-2415WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-2415WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 9-36V input, 24V fixed output voltage, 420mA output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-2422WIR"
+		(extends "TMR10-2421WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-2422WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 9-36V input, ±12V fixed output voltage, 420mA each output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-2423WIR"
+		(extends "TMR10-2421WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-2423WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 9-36V input, ±15V fixed output voltage, 336mA each output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-4810WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-4810WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 18-75V input, 3.3V fixed output voltage, 2.5A output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-4811WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-4811WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 18-75V input, 5V fixed output voltage, 2A output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-4812WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-4812WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 18-75V input, 12V fixed output voltage, 840mA output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-4813WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-4813WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 18-75V input, 15V fixed output voltage, 670mA output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-4815WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-4815WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 18-75V input, 24V fixed output voltage, 420mA output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-4821WIR"
+		(extends "TMR10-2421WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-4821WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 18-75V input, ±5V fixed output voltage, 1A each output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-4822WIR"
+		(extends "TMR10-2421WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-4822WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 18-75V input, ±12V fixed output voltage, 420mA each output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-4823WIR"
+		(extends "TMR10-2421WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-4823WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 18-75V input, ±15V fixed output voltage, 336mA each output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-7210WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-7210WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 40-160V input, 3.3V fixed output voltage, 2.5A output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-7211WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-7211WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 40-160V input, 5V fixed output voltage, 2A output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-7212WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-7212WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 40-160V input, 12V fixed output voltage, 840mA output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-7213WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-7213WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 40-160V input, 15V fixed output voltage, 670mA output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-7215WIR"
+		(extends "TMR10-2410WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-7215WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 40-160V input, 24V fixed output voltage, 420mA output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-7221WIR"
+		(extends "TMR10-2421WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-7221WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 40-160V input, ±5V fixed output voltage, 1A each output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-7222WIR"
+		(extends "TMR10-2421WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-7222WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 40-160V input, ±12V fixed output voltage, 420mA each output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR10-7223WIR"
+		(extends "TMR10-2421WIR")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR10-7223WIR"
+			(at 2.794 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR10-24xxWIR_48xxWIR_72xxWIR_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr10wir.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10W DC/DC railway converter regulated, 40-160V input, ±15V fixed output voltage, 336mA each output, 3.0kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR10*24xxWIR*48xxWIR*72xxWIR*THT*"
 			(at 0 0 0)
 			(effects
 				(font
