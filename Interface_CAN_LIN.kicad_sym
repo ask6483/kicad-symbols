@@ -17839,7 +17839,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "TJA1021T"
+	(symbol "TJA1021xT"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -17852,7 +17852,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TJA1021T"
+		(property "Value" "TJA1021xT"
 			(at 1.27 8.89 0)
 			(effects
 				(font
@@ -17862,7 +17862,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 0 -12.7 0)
+			(at 0 -20.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17871,8 +17871,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/TJA1021.pdf"
-			(at -10.16 11.43 0)
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/TJA1021.pdf"
+			(at 0 -24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17880,8 +17880,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LIN 2.1/SAE J2602 transceiver, SOIC-8"
-			(at 0 0 0)
+		(property "Description" "LIN 2.2A / SAE J2602 transceiver, SOIC-8"
+			(at 0 -22.606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17889,7 +17889,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "LIN 2.1 SAE J2602 Transceiver"
+		(property "ki_keywords" "NXP TJA1021T/10 TJA1021AT TJA1021BT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17907,7 +17907,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "TJA1021T_0_1"
+		(symbol "TJA1021xT_0_1"
 			(rectangle
 				(start -10.16 7.62)
 				(end 10.16 -7.62)
@@ -17920,7 +17920,7 @@
 				)
 			)
 		)
-		(symbol "TJA1021T_1_1"
+		(symbol "TJA1021xT_1_1"
 			(pin open_collector line
 				(at -12.7 5.08 0)
 				(length 2.54)
@@ -18068,7 +18068,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "TJA1021TK"
+	(symbol "TJA1021xTK"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -18081,7 +18081,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TJA1021TK"
+		(property "Value" "TJA1021xTK"
 			(at 1.27 8.89 0)
 			(effects
 				(font
@@ -18090,8 +18090,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"
-			(at 0 -12.7 0)
+		(property "Footprint" "Package_SON:HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm"
+			(at 0 -20.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18100,7 +18100,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/TJA1021.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/TJA1021.pdf"
+			(at 0 -24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LIN 2.2A / SAE J2602 transceiver, VSON-8 (DFN-8)"
+			(at 0 -22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "NXP TJA1021TK/10 TJA1021ATK TJA1021BTK"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18109,7 +18127,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LIN 2.1/SAE J2602 transceiver, DFN-8"
+		(property "ki_fp_filters" "*VSON*3x3mm*P0.65mm*EP1.6*x2.4*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18118,25 +18136,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "LIN 2.1 SAE J2602 Transceiver HVSON-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "DFN*1EP*3x3mm*P0.65mm*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "TJA1021TK_0_1"
+		(symbol "TJA1021xTK_0_1"
 			(rectangle
 				(start -10.16 7.62)
 				(end 10.16 -7.62)
@@ -18149,7 +18149,7 @@
 				)
 			)
 		)
-		(symbol "TJA1021TK_1_1"
+		(symbol "TJA1021xTK_1_1"
 			(pin open_collector line
 				(at -12.7 5.08 0)
 				(length 2.54)
@@ -18258,9 +18258,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 -10.16 90)
+			(pin passive line
+				(at 0 -10.16 90)
 				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -18568,8 +18569,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"
-			(at 0 -12.7 0)
+		(property "Footprint" "Package_SON:HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm"
+			(at 0 -20.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18578,7 +18579,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/TJA1029.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/TJA1029.pdf"
+			(at 0 -24.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LIN 2.2A / SAE J2602 transceiver with TXD dominant timeout, VSON-8 (DFN-8)"
+			(at 0 -22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "NXP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18587,25 +18606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LIN 2.2A/SAE J2602 transceiver with TXD dominant timeout, DFN-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "LIN 2.2A/SAE J2602 Transceiver HVSON-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "DFN*1EP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*VSON*3x3mm*P0.65mm*EP1.6*x2.4*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18737,9 +18738,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 -10.16 90)
+			(pin passive line
+				(at 0 -10.16 90)
 				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -19966,8 +19968,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"
-			(at 0 -12.7 0)
+		(property "Footprint" "Package_SON:HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm"
+			(at 0 -20.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19976,7 +19978,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/TJA1049.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/TJA1049.pdf"
+			(at 0 -24.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "High-Speed CAN Transceiver, standby mode, VSON-8 (DFN-8)"
+			(at 0 -22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "NXP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -19985,25 +20005,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "High-Speed CAN Transceiver, standby mode, DFN-8-1EP"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "High-Speed CAN Transceiver HVSON-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "DFN*1EP*3x3mm*P0.65mm* HVSON*"
+		(property "ki_fp_filters" "*VSON*3x3mm*P0.65mm*EP1.6*x2.4*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -20116,9 +20118,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 -10.16 90)
+			(pin passive line
+				(at 0 -10.16 90)
 				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -20152,7 +20155,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at 12.7 0 180)
 				(length 2.54)
 				(name "SPLIT"
@@ -20213,8 +20216,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"
-			(at 0 -12.7 0)
+		(property "Footprint" "Package_SON:HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm"
+			(at 0 -20.828 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20223,7 +20226,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/TJA1049.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/TJA1049.pdf"
+			(at 0 -25.146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "High-Speed CAN Transceiver, separate VIO, standby mode, VSON-8 (DFN-8)"
+			(at 0 -22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "TJA1049TK/3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -20232,25 +20253,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "High-Speed CAN Transceiver, separate VIO, standby mode, DFN-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "High-Speed CAN Transceiver HVSON-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "DFN*1EP*3x3mm*P0.65mm* HVSON*"
+		(property "ki_fp_filters" "*VSON*3x3mm*P0.65mm*EP1.6*x2.4*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -20381,9 +20384,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 -10.16 90)
+			(pin passive line
+				(at 0 -10.16 90)
 				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -21136,9 +21140,6 @@
 		(embedded_fonts no)
 	)
 	(symbol "TJA1051TK-3"
-		(pin_names
-			(offset 1.016)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -21160,8 +21161,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"
-			(at 0 -12.7 0)
+		(property "Footprint" "Package_SON:HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm"
+			(at 0 -20.828 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21170,7 +21171,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/TJA1051.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/TJA1051.pdf"
+			(at 0 -24.892 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "High-Speed CAN Transceiver, separate VIO, silent mode, VSON-8 (DFN-8)"
+			(at 0 -22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "TJA1051TK/3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -21179,25 +21198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "High-Speed CAN Transceiver, separate VIO, silent mode, DFN-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "High-Speed CAN Transceiver HVSON-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "DFN*1EP*3x3mm*P0.65mm*"
+		(property "ki_fp_filters" "*VSON*3x3mm*P0.65mm*EP1.6*x2.4*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -21328,9 +21329,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 -10.16 90)
+			(pin passive line
+				(at 0 -10.16 90)
 				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -23889,8 +23891,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"
-			(at 0 -12.7 0)
+		(property "Footprint" "Package_SON:HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm"
+			(at 0 -20.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23899,7 +23901,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/TJA1042.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/TJA1042.pdf"
+			(at 0 -24.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "High-Speed CAN Transceiver, separate VIO, standby mode, VSON-8 (DFN-8)"
+			(at 0 -22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "TJA1042TK/3"
 			(at 0 0 0)
 			(effects
 				(font
@@ -23908,25 +23928,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "High-Speed CAN Transceiver, separate VIO, standby mode, DFN-8-1EP"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "High-Speed CAN Transceiver HVSON-8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "DFN*1EP*3x3mm*P0.65mm* HVSON*"
+		(property "ki_fp_filters" "*VSON*3x3mm*P0.65mm*EP1.6*x2.4*"
 			(at 0 0 0)
 			(effects
 				(font
