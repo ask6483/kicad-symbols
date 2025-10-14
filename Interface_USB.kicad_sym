@@ -24415,7 +24415,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -13.97 15.24 0)
+			(at -12.7 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24424,7 +24424,7 @@
 			)
 		)
 		(property "Value" "FT230XQ"
-			(at 7.62 15.24 0)
+			(at 5.08 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24441,8 +24441,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ftdichip.com/wp-content/uploads/2024/05/DS_FT230X.pdf"
-			(at 0 0 0)
+		(property "Datasheet" "https://ftdichip.com/wp-content/uploads/2025/06/DS_FT230X.pdf"
+			(at 0 -26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24450,8 +24450,28 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Full Speed USB to Basic UART, QFN-16"
-			(at 0 0 0)
+		(property "Description" "Full-Speed USB to Basic UART, WQFN-16"
+			(at 0 -24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property private "KLC_S4.2_VCC" "This is not a power converter chip"
+			(at 0 -29.21 0)
+			(show_name)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property private "KLC_S4.2_3V3OUT" "This is not a power converter chip"
+			(at 0 -31.75 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24468,7 +24488,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "QFN*1EP*4x4mm*P0.65mm*"
+		(property "ki_fp_filters" "*QFN*4x4mm?P0.65mm?EP2.1x2.1mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -24479,8 +24499,8 @@
 		)
 		(symbol "FT230XQ_0_1"
 			(rectangle
-				(start -13.97 13.97)
-				(end 13.97 -13.97)
+				(start -12.7 12.7)
+				(end 12.7 -12.7)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -24491,27 +24511,9 @@
 			)
 		)
 		(symbol "FT230XQ_1_1"
-			(pin power_out line
-				(at -17.78 10.16 0)
-				(length 3.81)
-				(name "3V3OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -17.78 2.54 0)
-				(length 3.81)
+				(at -15.24 2.54 0)
+				(length 2.54)
 				(name "USBDM"
 					(effects
 						(font
@@ -24528,8 +24530,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at -17.78 0 0)
-				(length 3.81)
+				(at -15.24 0 0)
+				(length 2.54)
 				(name "USBDP"
 					(effects
 						(font
@@ -24546,8 +24548,8 @@
 				)
 			)
 			(pin input line
-				(at -17.78 -5.08 0)
-				(length 3.81)
+				(at -15.24 -5.08 0)
+				(length 2.54)
 				(name "~{RESET}"
 					(effects
 						(font
@@ -24564,8 +24566,8 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 17.78 270)
-				(length 3.81)
+				(at -2.54 15.24 270)
+				(length 2.54)
 				(name "VCC"
 					(effects
 						(font
@@ -24581,9 +24583,66 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 0 15.24 270)
+				(length 2.54)
+				(name "3V3OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "VCC_{IN}" input line)
+			)
+			(pin passive line
+				(at 0 -15.24 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -15.24 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
-				(at -2.54 -17.78 90)
-				(length 3.81)
+				(at 0 -15.24 90)
+				(length 2.54)
 				(name "GND"
 					(effects
 						(font
@@ -24600,26 +24659,8 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -17.78 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 17.78 270)
-				(length 3.81)
+				(at 2.54 15.24 270)
+				(length 2.54)
 				(name "VCCIO"
 					(effects
 						(font
@@ -24635,27 +24676,9 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 -17.78 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
-				(at 17.78 10.16 180)
-				(length 3.81)
+				(at 15.24 10.16 180)
+				(length 2.54)
 				(name "TXD"
 					(effects
 						(font
@@ -24672,8 +24695,8 @@
 				)
 			)
 			(pin input line
-				(at 17.78 7.62 180)
-				(length 3.81)
+				(at 15.24 7.62 180)
+				(length 2.54)
 				(name "RXD"
 					(effects
 						(font
@@ -24690,8 +24713,8 @@
 				)
 			)
 			(pin output line
-				(at 17.78 5.08 180)
-				(length 3.81)
+				(at 15.24 5.08 180)
+				(length 2.54)
 				(name "~{RTS}"
 					(effects
 						(font
@@ -24708,8 +24731,8 @@
 				)
 			)
 			(pin input line
-				(at 17.78 2.54 180)
-				(length 3.81)
+				(at 15.24 2.54 180)
+				(length 2.54)
 				(name "~{CTS}"
 					(effects
 						(font
@@ -24726,8 +24749,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -2.54 180)
-				(length 3.81)
+				(at 15.24 -2.54 180)
+				(length 2.54)
 				(name "CBUS0"
 					(effects
 						(font
@@ -24744,8 +24767,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -5.08 180)
-				(length 3.81)
+				(at 15.24 -5.08 180)
+				(length 2.54)
 				(name "CBUS1"
 					(effects
 						(font
@@ -24762,8 +24785,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -7.62 180)
-				(length 3.81)
+				(at 15.24 -7.62 180)
+				(length 2.54)
 				(name "CBUS2"
 					(effects
 						(font
@@ -24780,8 +24803,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -10.16 180)
-				(length 3.81)
+				(at 15.24 -10.16 180)
+				(length 2.54)
 				(name "CBUS3"
 					(effects
 						(font
@@ -24805,7 +24828,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -13.97 15.24 0)
+			(at -12.7 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24814,7 +24837,7 @@
 			)
 		)
 		(property "Value" "FT230XS"
-			(at 7.62 15.24 0)
+			(at 5.08 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24831,8 +24854,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf"
-			(at 0 0 0)
+		(property "Datasheet" "https://ftdichip.com/wp-content/uploads/2025/06/DS_FT230X.pdf"
+			(at 0 -29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24840,8 +24863,28 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Full Speed USB to Basic UART, SSOP-16"
-			(at 0 0 0)
+		(property "Description" "Full-Speed USB to Basic UART, SSOP-16"
+			(at 0 -26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property private "KLC_S4.2_VCC" "This is not a power converter chip"
+			(at 0 -34.29 0)
+			(show_name)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property private "KLC_S4.2_3V3OUT" "This is not a power converter chip"
+			(at 0 -36.83 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24858,7 +24901,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "SSOP*3.9x4.9*P0.635mm*"
+		(property "ki_fp_filters" "SSOP*3.9x4.9mm?P0.635mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -24869,8 +24912,8 @@
 		)
 		(symbol "FT230XS_0_1"
 			(rectangle
-				(start -13.97 13.97)
-				(end 13.97 -13.97)
+				(start -12.7 12.7)
+				(end 12.7 -12.7)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -24881,27 +24924,9 @@
 			)
 		)
 		(symbol "FT230XS_1_1"
-			(pin power_out line
-				(at -17.78 10.16 0)
-				(length 3.81)
-				(name "3V3OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -17.78 2.54 0)
-				(length 3.81)
+				(at -15.24 2.54 0)
+				(length 2.54)
 				(name "USBDM"
 					(effects
 						(font
@@ -24918,8 +24943,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at -17.78 0 0)
-				(length 3.81)
+				(at -15.24 0 0)
+				(length 2.54)
 				(name "USBDP"
 					(effects
 						(font
@@ -24936,8 +24961,8 @@
 				)
 			)
 			(pin input line
-				(at -17.78 -5.08 0)
-				(length 3.81)
+				(at -15.24 -5.08 0)
+				(length 2.54)
 				(name "~{RESET}"
 					(effects
 						(font
@@ -24954,8 +24979,8 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 17.78 270)
-				(length 3.81)
+				(at -2.54 15.24 270)
+				(length 2.54)
 				(name "VCC"
 					(effects
 						(font
@@ -24971,9 +24996,47 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 0 15.24 270)
+				(length 2.54)
+				(name "3V3OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "VCC_{IN}" input line)
+			)
+			(pin passive line
+				(at 0 -15.24 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
-				(at -2.54 -17.78 90)
-				(length 3.81)
+				(at 0 -15.24 90)
+				(length 2.54)
 				(name "GND"
 					(effects
 						(font
@@ -24990,8 +25053,8 @@
 				)
 			)
 			(pin power_in line
-				(at 2.54 17.78 270)
-				(length 3.81)
+				(at 2.54 15.24 270)
+				(length 2.54)
 				(name "VCCIO"
 					(effects
 						(font
@@ -25007,27 +25070,9 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 2.54 -17.78 90)
-				(length 3.81)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
-				(at 17.78 10.16 180)
-				(length 3.81)
+				(at 15.24 10.16 180)
+				(length 2.54)
 				(name "TXD"
 					(effects
 						(font
@@ -25044,8 +25089,8 @@
 				)
 			)
 			(pin input line
-				(at 17.78 7.62 180)
-				(length 3.81)
+				(at 15.24 7.62 180)
+				(length 2.54)
 				(name "RXD"
 					(effects
 						(font
@@ -25062,8 +25107,8 @@
 				)
 			)
 			(pin output line
-				(at 17.78 5.08 180)
-				(length 3.81)
+				(at 15.24 5.08 180)
+				(length 2.54)
 				(name "~{RTS}"
 					(effects
 						(font
@@ -25080,8 +25125,8 @@
 				)
 			)
 			(pin input line
-				(at 17.78 2.54 180)
-				(length 3.81)
+				(at 15.24 2.54 180)
+				(length 2.54)
 				(name "~{CTS}"
 					(effects
 						(font
@@ -25098,8 +25143,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -2.54 180)
-				(length 3.81)
+				(at 15.24 -2.54 180)
+				(length 2.54)
 				(name "CBUS0"
 					(effects
 						(font
@@ -25116,8 +25161,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -5.08 180)
-				(length 3.81)
+				(at 15.24 -5.08 180)
+				(length 2.54)
 				(name "CBUS1"
 					(effects
 						(font
@@ -25134,8 +25179,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -7.62 180)
-				(length 3.81)
+				(at 15.24 -7.62 180)
+				(length 2.54)
 				(name "CBUS2"
 					(effects
 						(font
@@ -25152,8 +25197,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -10.16 180)
-				(length 3.81)
+				(at 15.24 -10.16 180)
+				(length 2.54)
 				(name "CBUS3"
 					(effects
 						(font
