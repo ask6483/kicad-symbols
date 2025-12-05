@@ -33875,7 +33875,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:TQFN-32-1EP_5x5mm_P0.5mm_EP3.4x3.4mm_ThermalVias"
+		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.1x3.1mm_ThermalVias"
 			(at 0 -40.64 0)
 			(effects
 				(font
@@ -33893,7 +33893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Standalone driver for two-phase bipolar stepper motor, 2A, 4.75… 36V, UART, internal FETs, QFN28"
+		(property "Description" "Standalone driver for two-phase bipolar stepper motor, 2A, 4.75..36V, UART, internal FETs, VQFN-28"
 			(at 0 0 0)
 			(effects
 				(font
@@ -33911,7 +33911,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "TQFN*1EP?5x5mm?P0.5mm*"
+		(property "ki_fp_filters" "*QFN*5x5mm?P0.5mm?EP3.1*x3.1*mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -33989,7 +33989,7 @@
 			(pin bidirectional line
 				(at -15.24 15.24 0)
 				(length 2.54)
-				(name "PDN_UART"
+				(name "~{PD}/UART"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -34097,7 +34097,7 @@
 			(pin input line
 				(at -15.24 -10.16 0)
 				(length 2.54)
-				(name "ENN"
+				(name "~{EN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -34233,6 +34233,25 @@
 					)
 				)
 				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -27.94 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
 					(effects
 						(font
 							(size 1.27 1.27)
