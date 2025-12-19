@@ -1199,6 +1199,33 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" "V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "batt voltage-source cell"
 			(at 0 0 0)
 			(effects
@@ -1414,6 +1441,33 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
 			(at 0 0 0)
 			(effects
 				(font
@@ -147727,7 +147781,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "R_*"
+		(property "ki_fp_filters" "R_* RV_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -147739,7 +147793,7 @@
 		(symbol "Thermistor_0_1"
 			(polyline
 				(pts
-					(xy -1.905 3.175) (xy -1.905 1.905) (xy 1.905 -1.905) (xy 1.905 -3.175) (xy 1.905 -3.175)
+					(xy -1.905 3.175) (xy -1.905 1.905) (xy 1.905 -1.905) (xy 1.905 -3.175)
 				)
 				(stroke
 					(width 0.254)
@@ -147749,19 +147803,19 @@
 					(type none)
 				)
 			)
+		)
+		(symbol "Thermistor_1_1"
 			(rectangle
 				(start -1.016 2.54)
 				(end 1.016 -2.54)
 				(stroke
-					(width 0.2032)
-					(type default)
+					(width 0.254)
+					(type solid)
 				)
 				(fill
 					(type none)
 				)
 			)
-		)
-		(symbol "Thermistor_1_1"
 			(pin passive line
 				(at 0 5.08 270)
 				(length 2.54)
@@ -147863,7 +147917,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*NTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block* R_*"
+		(property "ki_fp_filters" "R_* RV_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -148111,15 +148165,6 @@
 			)
 		)
 		(property "ki_keywords" "thermistor NTC resistor sensor RTD"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "*NTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -148440,15 +148485,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*NTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(symbol "Thermistor_NTC_4Wire_0_1"
 			(arc
 				(start -3.175 2.413)
@@ -148615,18 +148651,6 @@
 				)
 				(fill
 					(type outline)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 3.175) (xy 0 3.175)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
 				)
 			)
 			(circle
@@ -148815,7 +148839,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*NTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block* R_*"
+		(property "ki_fp_filters" "R_* RV_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -149122,7 +149146,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*PTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block* R_*"
+		(property "ki_fp_filters" "R_* RV_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -149370,15 +149394,6 @@
 			)
 		)
 		(property "ki_keywords" "resistor PTC thermistor sensor RTD"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "PIN_ARRAY_3X1 bornier3 TerminalBlock*3pol"
 			(at 0 0 0)
 			(effects
 				(font
@@ -149699,15 +149714,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "PIN_ARRAY_4X1 bornier4 TerminalBlock*4pol"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(symbol "Thermistor_PTC_4Wire_0_1"
 			(arc
 				(start -3.175 2.413)
@@ -149874,18 +149880,6 @@
 				)
 				(fill
 					(type outline)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 3.175) (xy 0 3.175)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
 				)
 			)
 			(circle
@@ -150075,7 +150069,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*PTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block* R_*"
+		(property "ki_fp_filters" "R_* RV_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -150382,7 +150376,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "R_*"
+		(property "ki_fp_filters" "R_* RV_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -150394,7 +150388,7 @@
 		(symbol "Thermistor_US_0_1"
 			(polyline
 				(pts
-					(xy -1.905 2.54) (xy -1.905 1.27) (xy 1.905 -1.27)
+					(xy -1.905 2.54) (xy -1.905 1.27) (xy 1.905 -1.27) (xy 1.905 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -150455,18 +150449,6 @@
 			(polyline
 				(pts
 					(xy 0 -2.286) (xy 0 -2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.905 -1.27) (xy 1.905 -2.54)
 				)
 				(stroke
 					(width 0)

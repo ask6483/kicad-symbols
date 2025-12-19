@@ -15049,6 +15049,424 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "TEP150-7211UIR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -9.652 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEP150-7211UIR"
+			(at 1.778 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEP150-721xUIR_THT"
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tep150uir.pdf"
+			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "150W DC/DC railway converter regulated, 14-160V input, 5V fixed output voltage, 30A output, 3.0kVAC isolation, Half-Brick"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEP150*721xUIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TEP150-7211UIR_0_1"
+			(rectangle
+				(start -10.16 12.7)
+				(end 10.16 -12.7)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 12.7) (xy 0 11.43)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 10.16) (xy 0 8.89)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 7.62) (xy 0 6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 5.08) (xy 0 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -5.08) (xy 0 -6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -7.62) (xy 0 -8.89)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -10.16) (xy 0 -11.43)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TEP150-7211UIR_1_0"
+			(pin power_in line
+				(at -12.7 10.16 0)
+				(length 2.54)
+				(name "+Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 5.08 0)
+				(length 2.54)
+				(name "Pulse_Out"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "BUS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 0 0)
+				(length 2.54)
+				(name "Remote"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -5.08 0)
+				(length 2.54)
+				(name "UVLO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -7.62 0)
+				(length 2.54)
+				(name "Case"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 -10.16 0)
+				(length 2.54)
+				(name "-Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "+Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "+Sense"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "Trim"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -7.62 180)
+				(length 2.54)
+				(name "-Sense"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "TES1-0510"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17951,7 +18369,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 8.89 0)
+			(at -7.112 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17959,16 +18377,15 @@
 			)
 		)
 		(property "Value" "TMR2-2410WI"
-			(at 11.43 8.89 0)
+			(at 2.54 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-2xxxxWI_THT"
-			(at 3.81 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17977,7 +18394,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
-			(at 2.54 -12.7 0)
+			(at 0 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17985,7 +18402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "500mA Regulated 2W DC/DC converter with 1.5kV isolation, 9V-36V input, 3.3V fixed Output Voltage, SIP-9"
+		(property "Description" "2W DC/DC converter regulated, 9-36V input, 3.3V fixed output voltage, 500mA output, 1.5kVDC isolation, SIP-9"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17994,7 +18411,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -18003,37 +18420,100 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*2xxxxWI*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(symbol "TMR2-2410WI_0_0"
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "+Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "-Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 1.27 -5.08 90)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "+Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 			)
 		)
 		(symbol "TMR2-2410WI_0_1"
 			(rectangle
-				(start -10.16 7.62)
-				(end 10.16 -7.62)
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
 				)
 				(fill
 					(type background)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 7.62) (xy 0 6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
 				)
 			)
 			(polyline
@@ -18084,42 +18564,12 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -5.08) (xy 0 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 		)
-		(symbol "TMR2-2410WI_1_1"
-			(pin power_in line
-				(at -12.7 5.08 0)
-				(length 2.54)
-				(name "+VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
+		(symbol "TMR2-2410WI_1_0"
 			(pin input line
-				(at -12.7 0 0)
+				(at -10.16 0 0)
 				(length 2.54)
-				(name "ON/~{OFF}"
+				(name "Remote"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18134,26 +18584,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -12.7 -5.08 0)
-				(length 2.54)
-				(name "-VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin no_connect line
-				(at 10.16 2.54 180)
+				(at -1.27 -5.08 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -18171,8 +18603,230 @@
 					)
 				)
 			)
+			(pin power_out line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "-Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "TMR2-2421WI"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR2-2421WI"
+			(at 2.54 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2W DC/DC converter regulated, 9-36V input, ±5V fixed output voltage, 200mA each output, 1.5kVDC isolation, SIP-9"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TMR2-2421WI_0_0"
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "+Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "-Vin"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "+Vout"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TMR2-2421WI_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 5.08) (xy 0 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TMR2-2421WI_1_0"
+			(pin input line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "Remote"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin no_connect line
-				(at 10.16 0 180)
+				(at 0 -5.08 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -18191,16 +18845,16 @@
 				)
 			)
 			(pin power_out line
-				(at 12.7 5.08 180)
+				(at 10.16 0 180)
 				(length 2.54)
-				(name "+VOUT"
+				(name "Com"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "6"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18209,9 +18863,9 @@
 				)
 			)
 			(pin power_out line
-				(at 12.7 -5.08 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
-				(name "-VOUT"
+				(name "-Vout"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56740,6 +57394,582 @@
 			)
 		)
 	)
+	(symbol "TEC6-2410UI"
+		(extends "TEC3-2410UI")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEC6-2410UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec6ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6W DC/DC industrial converter regulated, 9-75V input, 3.3V fixed output voltage, 1.8A output, 1.6kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC6-2411UI"
+		(extends "TEC3-2410UI")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEC6-2411UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec6ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6W DC/DC industrial converter regulated, 9-75V input, 5V fixed output voltage, 1.2A output, 1.6kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC6-2412UI"
+		(extends "TEC3-2410UI")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEC6-2412UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec6ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6W DC/DC industrial converter regulated, 9-75V input, 12V fixed output voltage, 500mA output, 1.6kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC6-2413UI"
+		(extends "TEC3-2410UI")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEC6-2413UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec6ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6W DC/DC industrial converter regulated, 9-75V input, 15V fixed output voltage, 400mA output, 1.6kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC6-2415UI"
+		(extends "TEC3-2410UI")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEC6-2415UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec6ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6W DC/DC industrial converter regulated, 9-75V input, 24V fixed output voltage, 250mA output, 1.6kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC6-2419UI"
+		(extends "TEC3-2410UI")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEC6-2419UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec6ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6W DC/DC industrial converter regulated, 9-75V input, 9V fixed output voltage, 666mA output, 1.6kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC6-2421UI"
+		(extends "TEC3-2421UI")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEC6-2421UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec6ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6W DC/DC industrial converter regulated, 9-75V input, ±5V fixed output voltage, 600mA each output, 1.6kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC6-2422UI"
+		(extends "TEC3-2421UI")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEC6-2422UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec6ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6W DC/DC industrial converter regulated, 9-75V input, ±12V fixed output voltage, 250mA each output, 1.6kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEC6-2423UI"
+		(extends "TEC3-2421UI")
+		(property "Reference" "U"
+			(at -6.858 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEC6-2423UI"
+			(at 1.524 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEC3-24xxUI_THT"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tec6ui.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6W DC/DC industrial converter regulated, 9-75V input, ±15V fixed output voltage, 200mA each output, 1.6kVDC isolation, SIP-8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 62368-1 dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEC3*24xxUI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "TEL12-1212"
 		(extends "TEL12-1211")
 		(property "Reference" "U"
@@ -61495,6 +62725,262 @@
 			)
 		)
 		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEN10*110xxWIRH*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEP150-7212UIR"
+		(extends "TEP150-7211UIR")
+		(property "Reference" "U"
+			(at -9.652 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEP150-7212UIR"
+			(at 1.778 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEP150-721xUIR_THT"
+			(at 0.508 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tep150uir.pdf"
+			(at -0.762 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "150W DC/DC railway converter regulated, 14-160V input, 12V fixed output voltage, 12.5A output, 3.0kVAC isolation, Half-Brick"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEP150*721xUIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEP150-7213UIR"
+		(extends "TEP150-7211UIR")
+		(property "Reference" "U"
+			(at -9.652 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEP150-7213UIR"
+			(at 1.778 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEP150-721xUIR_THT"
+			(at 0.508 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tep150uir.pdf"
+			(at -0.762 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "150W DC/DC railway converter regulated, 14-160V input, 15V fixed output voltage, 10A output, 3.0kVAC isolation, Half-Brick"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEP150*721xUIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEP150-7215UIR"
+		(extends "TEP150-7211UIR")
+		(property "Reference" "U"
+			(at -9.652 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEP150-7215UIR"
+			(at 1.778 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEP150-721xUIR_THT"
+			(at 0.508 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tep150uir.pdf"
+			(at -0.762 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "150W DC/DC railway converter regulated, 14-160V input, 24V fixed output voltage, 6.3A output, 3.0kVAC isolation, Half-Brick"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEP150*721xUIR*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TEP150-7218UIR"
+		(extends "TEP150-7211UIR")
+		(property "Reference" "U"
+			(at -9.652 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEP150-7218UIR"
+			(at 1.778 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEP150-721xUIR_THT"
+			(at 0.508 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tep150uir.pdf"
+			(at -0.762 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "150W DC/DC railway converter regulated, 14-160V input, 48V fixed output voltage, 3.2A output, 3.0kVAC isolation, Half-Brick"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc 50155 50121-3-2 62368-1 single"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TEP150*721xUIR*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71619,7 +73105,7 @@
 	(symbol "TMR2-2411WI"
 		(extends "TMR2-2410WI")
 		(property "Reference" "U"
-			(at -7.62 8.89 0)
+			(at -7.112 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71627,16 +73113,15 @@
 			)
 		)
 		(property "Value" "TMR2-2411WI"
-			(at 11.43 8.89 0)
+			(at 2.54 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-2xxxxWI_THT"
-			(at 3.81 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71645,7 +73130,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
-			(at 2.54 -12.7 0)
+			(at 0 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71653,7 +73138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400mA Regulated 2W DC/DC converter with 1.5kV isolation, 9V-36V input, 5V fixed Output Voltage, SIP-9"
+		(property "Description" "2W DC/DC converter regulated, 9-36V input, 5V fixed output voltage, 400mA output, 1.5kVDC isolation, SIP-9"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71662,7 +73147,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71671,7 +73156,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*2xxxxWI*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71684,7 +73169,7 @@
 	(symbol "TMR2-2412WI"
 		(extends "TMR2-2410WI")
 		(property "Reference" "U"
-			(at -7.62 8.89 0)
+			(at -7.112 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71692,16 +73177,15 @@
 			)
 		)
 		(property "Value" "TMR2-2412WI"
-			(at 11.43 8.89 0)
+			(at 2.54 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-2xxxxWI_THT"
-			(at 3.81 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71710,7 +73194,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
-			(at 2.54 -12.7 0)
+			(at 0 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71718,7 +73202,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "165mA Regulated 2W DC/DC converter with 1.5kV isolation, 9V-36V input, 12V fixed Output Voltage, SIP-9"
+		(property "Description" "2W DC/DC converter regulated, 9-36V input, 12V fixed output voltage, 167mA output, 1.5kVDC isolation, SIP-9"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71727,7 +73211,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71736,7 +73220,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*2xxxxWI*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71749,7 +73233,7 @@
 	(symbol "TMR2-2413WI"
 		(extends "TMR2-2410WI")
 		(property "Reference" "U"
-			(at -7.62 8.89 0)
+			(at -7.112 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71757,16 +73241,15 @@
 			)
 		)
 		(property "Value" "TMR2-2413WI"
-			(at 11.43 8.89 0)
+			(at 2.54 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-2xxxxWI_THT"
-			(at 3.81 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71775,7 +73258,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
-			(at 2.54 -12.7 0)
+			(at 0 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71783,7 +73266,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "135mA Regulated 2W DC/DC converter with 1.5kV isolation, 9V-36V input, 15V fixed Output Voltage, SIP-9"
+		(property "Description" "2W DC/DC converter regulated, 9-36V input, 15V fixed output voltage, 134mA output, 1.5kVDC isolation, SIP-9"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71792,7 +73275,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71801,7 +73284,135 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*2xxxxWI*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR2-2422WI"
+		(extends "TMR2-2421WI")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR2-2422WI"
+			(at 2.54 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2W DC/DC converter regulated, 9-36V input, ±12V fixed output voltage, 83mA each output, 1.5kVDC isolation, SIP-9"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR2-2423WI"
+		(extends "TMR2-2421WI")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR2-2423WI"
+			(at 2.54 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2W DC/DC converter regulated, 9-36V input, ±15V fixed output voltage, 67mA each output, 1.5kVDC isolation, SIP-9"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71814,7 +73425,7 @@
 	(symbol "TMR2-4810WI"
 		(extends "TMR2-2410WI")
 		(property "Reference" "U"
-			(at -7.62 8.89 0)
+			(at -7.112 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71822,16 +73433,15 @@
 			)
 		)
 		(property "Value" "TMR2-4810WI"
-			(at 11.43 8.89 0)
+			(at 2.54 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-2xxxxWI_THT"
-			(at 3.81 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71840,7 +73450,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
-			(at 2.54 -12.7 0)
+			(at 0 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71848,7 +73458,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "500mA Regulated 2W DC/DC converter with 1.5kV isolation, 18V-75V input, 3.3V fixed Output Voltage, SIP-9"
+		(property "Description" "2W DC/DC converter regulated, 18-75V input, 3.3V fixed output voltage, 500mA output, 1.5kVDC isolation, SIP-9"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71857,7 +73467,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71866,7 +73476,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*2xxxxWI*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71879,7 +73489,7 @@
 	(symbol "TMR2-4811WI"
 		(extends "TMR2-2410WI")
 		(property "Reference" "U"
-			(at -7.62 8.89 0)
+			(at -7.112 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71887,16 +73497,15 @@
 			)
 		)
 		(property "Value" "TMR2-4811WI"
-			(at 11.43 8.89 0)
+			(at 2.54 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-2xxxxWI_THT"
-			(at 3.81 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71905,7 +73514,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
-			(at 2.54 -12.7 0)
+			(at 0 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71913,7 +73522,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400mA Regulated 2W DC/DC converter with 1.5kV isolation, 18V-75V input, 5V fixed Output Voltage, SIP-9"
+		(property "Description" "2W DC/DC converter regulated, 18-75V input, 5V fixed output voltage, 400mA output, 1.5kVDC isolation, SIP-9"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71922,7 +73531,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71931,7 +73540,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*2xxxxWI*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71944,7 +73553,7 @@
 	(symbol "TMR2-4812WI"
 		(extends "TMR2-2410WI")
 		(property "Reference" "U"
-			(at -7.62 8.89 0)
+			(at -7.112 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71952,16 +73561,15 @@
 			)
 		)
 		(property "Value" "TMR2-4812WI"
-			(at 11.43 8.89 0)
+			(at 2.54 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-2xxxxWI_THT"
-			(at 3.81 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71970,7 +73578,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
-			(at 2.54 -12.7 0)
+			(at 0 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71978,7 +73586,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "165mA Regulated 2W DC/DC converter with 1.5kV isolation, 18V-75V input, 12V fixed Output Voltage, SIP-9"
+		(property "Description" "2W DC/DC converter regulated, 18-75V input, 12V fixed output voltage, 167mA output, 1.5kVDC isolation, SIP-9"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71987,7 +73595,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -71996,7 +73604,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*2xxxxWI*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -72009,7 +73617,7 @@
 	(symbol "TMR2-4813WI"
 		(extends "TMR2-2410WI")
 		(property "Reference" "U"
-			(at -7.62 8.89 0)
+			(at -7.112 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -72017,16 +73625,15 @@
 			)
 		)
 		(property "Value" "TMR2-4813WI"
-			(at 11.43 8.89 0)
+			(at 2.54 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-2xxxxWI_THT"
-			(at 3.81 -8.89 0)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -72035,7 +73642,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
-			(at 2.54 -12.7 0)
+			(at 0 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -72043,7 +73650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "135mA Regulated 2W DC/DC converter with 1.5kV isolation, 18V-75V input, 15V fixed Output Voltage, SIP-9"
+		(property "Description" "2W DC/DC converter regulated, 18-75V input, 15V fixed output voltage, 134mA output, 1.5kVDC isolation, SIP-9"
 			(at 0 0 0)
 			(effects
 				(font
@@ -72052,7 +73659,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Traco isolated isolation dc-dc converter transformer"
+		(property "ki_keywords" "Traco isolated dc-dc single"
 			(at 0 0 0)
 			(effects
 				(font
@@ -72061,7 +73668,199 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR*2xxxxWI*"
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR2-4821WI"
+		(extends "TMR2-2421WI")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR2-4821WI"
+			(at 2.54 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2W DC/DC converter regulated, 18-75V input, ±5V fixed output voltage, 200mA each output, 1.5kVDC isolation, SIP-9"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR2-4822WI"
+		(extends "TMR2-2421WI")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR2-4822WI"
+			(at 2.54 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2W DC/DC converter regulated, 18-75V input, ±12V fixed output voltage, 83mA each output, 1.5kVDC isolation, SIP-9"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "TMR2-4823WI"
+		(extends "TMR2-2421WI")
+		(property "Reference" "U"
+			(at -7.112 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR2-4823WI"
+			(at 2.54 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR2-xxxxWI_THT"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tmr2wi.pdf"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2W DC/DC converter regulated, 18-75V input, ±15V fixed output voltage, 67mA each output, 1.5kVDC isolation, SIP-9"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Traco isolated dc-dc dual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Converter*DCDC*TRACO*TMR2*xxxxWI*THT*"
 			(at 0 0 0)
 			(effects
 				(font
