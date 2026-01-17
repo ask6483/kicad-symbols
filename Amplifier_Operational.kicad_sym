@@ -29561,7 +29561,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm"
+		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
 			(at 0 -15.24 0)
 			(effects
 				(font
@@ -29579,7 +29579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low-Power, Wideband, Voltage-Feedback Operational Amplifier with Disable, VSSOP-10"
+		(property "Description" "Low-Power, Wideband, Voltage-Feedback Operational Amplifier with Disable, TSSOP-10 (Texas DGS0010A / VSSOP)"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -29605,7 +29605,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "*VSSOP*3x3mm*P0.5mm*"
+		(property "ki_fp_filters" "*TSSOP*3x3mm?P0.5mm*"
 			(at 0 0 0)
 			(effects
 				(font
