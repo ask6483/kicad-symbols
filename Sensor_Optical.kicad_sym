@@ -4542,7 +4542,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "D4"
+		(property "Reference" "D"
 			(at 2.54 3.81 0)
 			(effects
 				(font
@@ -4681,30 +4681,6 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.27) (xy 0 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 1.27 0) (xy 0.762 0)
 				)
 				(stroke
@@ -4742,8 +4718,8 @@
 		)
 		(symbol "D_SiPM_OnSemi_MicroFJ-300xx_1_1"
 			(pin passive line
-				(at 0 5.08 270)
-				(length 2.54)
+				(at 0 2.54 270)
+				(length 1.27)
 				(name "A"
 					(effects
 						(font
@@ -4760,8 +4736,8 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 90)
-				(length 2.54)
+				(at 0 -2.54 90)
+				(length 1.27)
 				(name "C"
 					(effects
 						(font
@@ -4778,8 +4754,8 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 90)
-				(length 2.54)
+				(at 0 -2.54 90)
+				(length 1.27)
 				(hide yes)
 				(name "C"
 					(effects
@@ -4827,7 +4803,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "D4"
+		(property "Reference" "D"
 			(at 2.54 3.81 0)
 			(effects
 				(font
@@ -4966,30 +4942,6 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.27) (xy 0 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 1.27 0) (xy 0.762 0)
 				)
 				(stroke
@@ -5027,8 +4979,8 @@
 		)
 		(symbol "D_SiPM_OnSemi_MicroFJ-60035_1_1"
 			(pin passive line
-				(at 0 5.08 270)
-				(length 2.54)
+				(at 0 2.54 270)
+				(length 1.27)
 				(name "A"
 					(effects
 						(font
@@ -5045,8 +4997,8 @@
 				)
 			)
 			(pin passive line
-				(at 0 5.08 270)
-				(length 2.54)
+				(at 0 2.54 270)
+				(length 1.27)
 				(hide yes)
 				(name "A"
 					(effects
@@ -5064,8 +5016,8 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 90)
-				(length 2.54)
+				(at 0 -2.54 90)
+				(length 1.27)
 				(name "C"
 					(effects
 						(font
@@ -5082,8 +5034,8 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 90)
-				(length 2.54)
+				(at 0 -2.54 90)
+				(length 1.27)
 				(hide yes)
 				(name "C"
 					(effects
