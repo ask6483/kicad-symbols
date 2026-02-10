@@ -30,7 +30,7 @@ single text-based `.kicad_sym` file containing all the symbols in that library.
 It's recommended to _pack_ the libraries before use in KiCad for improved end-user
 performance.
 
-To pack the libraries, you will need to have CMake and `kicad-cli` installed.
+To pack the libraries, you will need to have CMake and Python installed.
 
 To disable packing of the libraries, set the CMake option `KICAD_PACK_SYM_LIBRARIES` to
 `OFF` when configuring the build.

@@ -1,10 +1,6 @@
-cmake_minimum_required( VERSION 3.10 FATAL_ERROR )
+cmake_minimum_required( VERSION 3.12 FATAL_ERROR )
 
 project( kicad-symbols NONE )
-
-set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/CMakeModules")
-
-find_package(KicadCli)
 
 #================================================
 # Locations for install targets.
@@ -25,7 +21,6 @@ else()
 endif()
 
 mark_as_advanced( KICAD_DATA KICAD_LIBRARY )
-
 
 option(KICAD_PACK_SYM_LIBRARIES "Pack symbol libraries before installation" ON)
 
@@ -48,42 +43,60 @@ add_custom_target( uninstall
 # Functions to pack symbol libraries.
 #================================================
 
-# Pack a single library
-#
-# Arguments:
-#   input_lib  - Input library file to pack
-#   output_lib - Packed library file to write
-function( pack_library input_lib output_lib )
-    add_custom_command(
-        OUTPUT ${output_lib}
-        COMMAND ${KICAD_CLI} sym upgrade --force --output ${output_lib} ${input_lib}
-        DEPENDS ${input_lib}
-        COMMENT "Packing symbol library ${input_lib} to ${output_lib}"
-        VERBATIM
-    )
-endfunction()
-
+find_package(Python3 COMPONENTS Interpreter)
 
 # Pack all libraries in a list
 #
 # Arguments:
-#   input_libs       - List of input library files to pack
+#   input_libs       - List of input library directories to pack
 #   output_dir       - Directory to place packed library files
 #   packed_lib_files - Output variable to receive list of packed library files
-#
-function( pack_all_libraries input_libs output_dir packed_lib_files )
+#   sym_lib_table    - Symbol library table file to update with packed libraries
+function( pack_all_libraries input_libs output_dir packed_lib_files sym_lib_table packed_sym_lib_table )
 
     set( local_packed_lib_files "" )
 
-    foreach( lib_file ${input_libs} )
-        get_filename_component( lib_filename ${lib_file} NAME_WE )
-        set( packed_lib_file "${output_dir}/${lib_filename}.kicad_sym" )
+    if( NOT Python3_FOUND )
+        message( FATAL_ERROR "Python3 not found. Cannot pack symbol libraries." )
+    endif()
 
-        pack_library( ${lib_file} ${packed_lib_file} )
+    # Collect all source files inside the library directories
+    set( all_source_files "" )
+    foreach( lib_dir ${input_libs} )
+        file( GLOB lib_source_files "${lib_dir}/*.kicad_sym" )
+        list( APPEND all_source_files ${lib_source_files} )
+    endforeach()
+
+    foreach( lib_file ${input_libs} )
+        get_filename_component( lib_name ${lib_file} NAME_WE )
+        set( packed_lib_file "${output_dir}/${lib_name}.kicad_sym" )
         list( APPEND local_packed_lib_files ${packed_lib_file} )
     endforeach()
 
+    set( local_packed_sym_lib_table "${output_dir}/sym-lib-table" )
+
+    set( pack_script "${CMAKE_CURRENT_SOURCE_DIR}/tools/kicad_lib_pack.py" )
+
+    add_custom_command(
+        OUTPUT
+            ${local_packed_lib_files}
+            ${local_packed_sym_lib_table}
+        COMMAND ${CMAKE_COMMAND} -E make_directory ${output_dir}
+        COMMAND ${Python3_EXECUTABLE} "${pack_script}"
+            --input ${input_libs}
+            --output "${output_dir}"
+            --table "${sym_lib_table}"
+            -v
+        DEPENDS
+            ${all_source_files}
+            ${sym_lib_table}
+            ${pack_script}
+        COMMENT "Packing symbol libraries and table to ${output_dir}"
+        VERBATIM
+    )
+
     set( ${packed_lib_files} ${local_packed_lib_files} PARENT_SCOPE )
+    set( ${packed_sym_lib_table} ${local_packed_sym_lib_table} PARENT_SCOPE )
 endfunction()
 
 #================================================
@@ -106,31 +119,32 @@ if( KICAD_PACK_SYM_LIBRARIES )
 
     set( packed_lib_dir "${CMAKE_CURRENT_BINARY_DIR}/packed" )
 
-    if( NOT KICAD_CLI )
-        message( FATAL_ERROR "kicad-cli not found. Cannot pack symbol libraries." )
-    endif()
-    message( STATUS "Using kicad-cli: ${KICAD_CLI}" )
 
     # Pack all symbol libraries before installation.
+    # This has a limitation that you have to run CMake after adding new libraries
+    # but this should be fine for packaging and installation use cases.
     set( packed_sym_lib_files "" )
-    pack_all_libraries( "${sym_lib_dirs}" "${packed_lib_dir}" packed_sym_lib_files )
+    set( packed_sym_lib_table "" )
+    pack_all_libraries(
+        "${sym_lib_dirs}"
+        "${packed_lib_dir}"
+        packed_sym_lib_files
+        "${CMAKE_SOURCE_DIR}/sym-lib-table"
+        packed_sym_lib_table
+    )
 
     # The pack target depends on all packed libraries.
     add_custom_target( pack_symbols
         ALL # make pack_symbols part of the default build
-        DEPENDS ${packed_sym_lib_files}
+        DEPENDS
+            ${packed_sym_lib_files}
+            ${packed_sym_lib_table}
     )
-
-    # Create the output dir as a dependency of the pack target.
-    add_custom_target(
-        make_packed_dir
-        COMMAND ${CMAKE_COMMAND} -E make_directory ${packed_lib_dir}
-    )
-
-    add_dependencies(pack_symbols make_packed_dir)
 
     set( installed_sym_lib_files ${packed_sym_lib_files} )
     set( installed_sym_lib_dirs "" )
+    set( installed_sym_lib_table "${packed_sym_lib_table}" )
+
 else()
     message( STATUS "Not packing libraries before installation" )
 
@@ -143,6 +157,10 @@ else()
         set( installed_sym_lib_files ${sym_lib_files} )
         set( installed_sym_lib_dirs "" )
     endif()
+
+    # Use the original sym-lib-table in both cases, since it should
+    # already be correct for the branch.
+    set( installed_sym_lib_table "sym-lib-table" )
 endif()
 
 #================================================
@@ -167,7 +185,7 @@ install (
 
 # Install the default global symbol library table in the template folder.
 install(
-    FILES sym-lib-table
+    FILES ${installed_sym_lib_table}
     DESTINATION ${KICAD_TEMPLATE}
     COMPONENT resources
 )
