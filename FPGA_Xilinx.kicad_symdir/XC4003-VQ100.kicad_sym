@@ -1,7 +1,7 @@
 (kicad_symbol_lib
 	(version 20251024)
 	(generator "kicad_symbol_editor")
-	(generator_version "9.99")
+	(generator_version "10.0")
 	(symbol "XC4003-VQ100"
 		(pin_names
 			(offset 1.016)
@@ -42,7 +42,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "xilinx/xc400x-pinout.pdf"
+		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Xilinx%20PDFs/XC4000%20Series%20Arrays.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
